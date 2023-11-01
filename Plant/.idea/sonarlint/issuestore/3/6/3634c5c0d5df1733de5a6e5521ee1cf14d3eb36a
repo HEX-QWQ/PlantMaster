@@ -1,0 +1,12 @@
+
+=
+java:S1604O"(Make this anonymous inner class a lambda(‰ªˆF
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(û¸÷³ÿÿÿÿÿ
+U
+java:S2387":"mFragments" is the name of a field in "FragmentActivity".(§™Í«üÿÿÿÿ
+<	java:S131T""Add a default case to this switch.(×“¾ñùÿÿÿÿ
+6	java:S131d""Add a default case to this switch.(ìúÇV
+U
+java:S1161z":Add the "@Override" annotation above this method signature(¿£ú½ùÿÿÿÿ
+F
+java:S1068'"+Remove this unused "mImgTui" private field.(ë£±ñøÿÿÿÿ

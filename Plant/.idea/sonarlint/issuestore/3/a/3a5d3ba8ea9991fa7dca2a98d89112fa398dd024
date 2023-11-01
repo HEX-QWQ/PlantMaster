@@ -1,0 +1,9 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯¤‡½
+g	java:S116"RRename this field "tv_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±±›Í
+m
+java:S1450"WRemove the "titlebar" field and declare it as a local variable in the relevant methods.(¥Ð²Í
+l
+java:S1450"VRemove the "tv_back" field and declare it as a local variable in the relevant methods.(±±›Í
+B
+java:S1068",Remove this unused "titlebar" private field.(¥Ð²Í

@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/white">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/titile_bar" />
+
+    <!-- 图书图片 -->
+    <ImageView
+        android:id="@+id/plant_photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
+
+    <!-- 图书名称 -->
+    <TextView
+        android:id="@+id/plant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="植物名称"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp" />
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0" />
+
+    <!-- 作者 -->
+    <TextView
+        android:id="@+id/plant_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="植物类别"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp" />
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0" />
+
+    <!-- 出版社 -->
+    <TextView
+        android:id="@+id/plant_introduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="植物简介"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp" />
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0" />
+
+    <!-- 编号 -->
+    <TextView
+        android:id="@+id/plant_env"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生长习性"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp" />
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0" />
+
+    <!-- 图书简介 -->
+    <TextView
+        android:id="@+id/plant_eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="育植技术"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+</LinearLayout>
+</ScrollView>
