@@ -1,0 +1,32 @@
+
+L
+java:S1066:"/Merge this if statement with the enclosing one.(â¥¤›8¢ Ï¸1
+g	java:S101$"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ã‡üÑùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(û¸÷³ÿÿÿÿÿ
+j	java:S116&"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İù½‘8“£ Ï¸1
+P
+java:S1659'".Declare "mChooseFromAlbum" on a separate line.(Ö“æñüÿÿÿÿ8¡£ Ï¸1
+L
+java:S16590"/Declare "mImageUriFromFile" on a separate line.( ô´8££ Ï¸1
+u
+java:S14501"XRemove the "imageFile" field and declare it as a local variable in the relevant methods.(şŠÆ·8¦£ Ï¸1
+[
+java:S1874T">Remove this use of "startActivityForResult"; it is deprecated.(ãØ—é8¹£ Ï¸1
+`
+java:S1874j">Remove this use of "startActivityForResult"; it is deprecated.(²Û¬…ûÿÿÿÿ8À£ Ï¸1
+Z
+java:S1117x"=Rename "imageFile" which hides the field declared at line 49.(Úñé¦8Ä£ Ï¸1
+m
+java:S1874ƒ"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ8Å£ Ï¸1
+h
+java:S1874"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ8Ç£ Ï¸1
+c
+java:S3252Ê"@Use static access with "android.provider.BaseColumns" for "_ID".(»¨–öıÿÿÿÿ8Ñ£ Ï¸1
+k
+java:S3252ò"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(äµõŒ8Ø£ Ï¸1
+i
+java:S1874ÿ"FRemove this use of "ACTION_MEDIA_SCANNER_SCAN_FILE"; it is deprecated.(ëÒ¿šıÿÿÿÿ8Û£ Ï¸1
+P
+java:S1068'".Remove this unused "mTakePhoto" private field.(Ö“æñüÿÿÿÿ8Ş£ Ï¸1
+V
+java:S1068'"4Remove this unused "mChooseFromAlbum" private field.(Ö“æñüÿÿÿÿ8à£ Ï¸1

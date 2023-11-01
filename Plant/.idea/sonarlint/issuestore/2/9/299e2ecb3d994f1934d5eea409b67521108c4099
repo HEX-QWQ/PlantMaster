@@ -1,0 +1,29 @@
+
+i
+java:S1192]"NDefine a constant instead of duplicating this literal "LoginActivity" 4 times.(Ÿ—èÿÿÿÿÿ
+f	java:S117V"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÜ¾
+C
+java:S1604>"(Make this anonymous inner class a lambda(˜ç¡†ùÿÿÿÿ
+C
+java:S1604H"(Make this anonymous inner class a lambda(ÖÉ°ôúÿÿÿÿ
+g
+java:S1301’"KReplace this "switch" statement by "if" statements to increase readability.(ıŞ³‹ùÿÿÿÿ
+j
+java:S1104!"TMake username a static final constant or non-public and provide accessors if needed.(Ÿ’—î
+D
+java:S1444!".Make this "public static username" field final(Ÿ’—î
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(û¸÷³ÿÿÿÿÿ
+i	java:S116#"TRename this field "et_number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÜéÜ
+p	java:S116$"VRename this field "et_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ğù‡ÿÿÿÿÿ
+m	java:S116%"SRename this field "bt_login" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ëÍ»ıÿÿÿÿ
+j	java:S116&"VRename this field "rl_register" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é³
+m	java:S116'"XRename this field "login_handler" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜéÅ
+c	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á»–
+c	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öš¹¤
+K
+java:S1874:"0Remove this use of "getColor"; it is deprecated.(°¤Ä¹üÿÿÿÿ
+F
+java:S1874;"0Remove this use of "getColor"; it is deprecated.(­˜‘È
+Q
+java:S2696d"6Make the enclosing method "static" or remove this set.(Æ¼ãùÿÿÿÿ
+=	java:S131’""Add a default case to this switch.(ıŞ³‹ùÿÿÿÿ

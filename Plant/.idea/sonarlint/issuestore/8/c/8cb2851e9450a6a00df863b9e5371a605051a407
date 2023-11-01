@@ -1,0 +1,15 @@
+
+P
+java:S1118":Add a private constructor to hide the implicit public one.(Ü‡ä
+I
+java:S1172&".Remove this unused method parameter "context".(µ­Ü¾ùÿÿÿÿ
+T
+java:S1874Z"9Remove this use of "getDefaultDisplay"; it is deprecated.(ÉºÀ¡ıÿÿÿÿ
+J
+java:S1874Z"/Remove this use of "getSize"; it is deprecated.(ÉºÀ¡ıÿÿÿÿ
+T
+java:S1874^"9Remove this use of "getDefaultDisplay"; it is deprecated.(ÁÜÎùüÿÿÿÿ
+F
+java:S1874_"0Remove this use of "getWidth"; it is deprecated.(óÄ¤õ
+G
+java:S1874`"1Remove this use of "getHeight"; it is deprecated.(áüæú
