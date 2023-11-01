@@ -67,14 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="#E0E0E0" />
-            <com.example.plant.Listview.HomeListView
-                android:id="@+id/plantlist"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:dividerHeight="8dp"/>
+
 
         </LinearLayout>
         <LinearLayout
@@ -116,6 +109,14 @@
                 android:layout_weight="1"
                 app:msrc="@mipmap/img_weather_bg" />
         </LinearLayout>
+        <com.example.plant.Listview.HomeListView
+            android:id="@+id/plantlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:dividerHeight="8dp"/>
     </LinearLayout>
 
 </LinearLayout>

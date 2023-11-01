@@ -1,9 +1,21 @@
 
+E
+java:S1604L"(Make this anonymous inner class a lambda(°©¹ß8·¹ÉÉ¸1
+J
+java:S1604T"(Make this anonymous inner class a lambda(ÙÔ±´ûÿÿÿÿ8·¹ÉÉ¸1
+J
+java:S1604_"(Make this anonymous inner class a lambda(ÙÔ±´ûÿÿÿÿ8·¹ÉÉ¸1
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯¤‡½
-g	java:S116"RRename this field "tv_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±±›Í
-m
-java:S1450"WRemove the "titlebar" field and declare it as a local variable in the relevant methods.(¥Ð²Í
-l
-java:S1450"VRemove the "tv_back" field and declare it as a local variable in the relevant methods.(±±›Í
-B
-java:S1068",Remove this unused "titlebar" private field.(¥Ð²Í
+s	java:S116"WRename this field "ClickToLogin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(› ß£8Ç¹ÉÉ¸1
+t	java:S116"XRename this field "ClickToLogout" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¤­³8Ç¹ÉÉ¸1
+s
+java:S1450"VRemove the "mParam1" field and declare it as a local variable in the relevant methods.(•Íï‘8É¹ÉÉ¸1
+s
+java:S1450"VRemove the "mParam2" field and declare it as a local variable in the relevant methods.(¡ˆ€ 8Ê¹ÉÉ¸1
+T
+java:S1135"2Complete the task associated to this TODO comment.(ÜûŠ—øÿÿÿÿ8Ï¹ÉÉ¸1
+]	java:S125>"<This block of commented-out lines of code should be removed.(•»›äüÿÿÿÿ8Ú¹ÉÉ¸1
+H
+java:S1068"+Remove this unused "mParam1" private field.(•Íï‘8ä¹ÉÉ¸1
+H
+java:S1068"+Remove this unused "mParam2" private field.(¡ˆ€ 8ä¹ÉÉ¸1

@@ -19,15 +19,31 @@ g
 7app/src/main/java/com/example/plant/bean/plantBean.java,3\0\309ad019b71e6e50c16ba1e541e643dff3ca6050
 l
 <app/src/main/java/com/example/plant/Adapter/HomeAdapter.java,4\f\4f3b26c309612f3c4019dd6c043fcf4fa1d837f5
+<<<<<<< HEAD
+=======
 o
 ?app/src/main/java/com/example/plant/Activity/LoginActivity.java,2\9\299e2ecb3d994f1934d5eea409b67521108c4099
+>>>>>>> d811b7e566751b307292bdb4c86386d7c4c1ad91
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+<<<<<<< HEAD
+h
+8app/src/main/java/com/example/plant/utils/JsonParse.java,a\e\ae94df1c6d08b6ca5ed096f7bdd74c4dc9417a3a
+m
+=app/src/main/java/com/example/plant/Activity/plantDetail.java,a\e\ae22731a12ba34603ed571a20b52db2df625917e
+b
+2app/src/main/java/com/example/plant/bean/User.java,8\8\88cd888d94c6e06793ff0486845697be5cd300ca
+o
+?app/src/main/java/com/example/plant/Activity/LoginActivity.java,2\9\299e2ecb3d994f1934d5eea409b67521108c4099
+p
+@app/src/main/java/com/example/plant/Activity/SignUpActivity.java,7\4\74b210b09c6e8a6707ec38b9f016a998da7e6823
+=======
 k
 ;app/src/main/java/com/example/plant/utils/DensityUtils.java,8\c\8cb2851e9450a6a00df863b9e5371a605051a407
 i
 9app/src/main/java/com/example/plant/View/WeatherView.java,a\d\addfad0c791c12f8a0832c00f1d8bf7157f75862
 h
 8app/src/main/java/com/example/plant/Activity/camera.java,5\2\5255c63d1820f6e0aa1993fa075ef8c764f3cbb2
+>>>>>>> d811b7e566751b307292bdb4c86386d7c4c1ad91

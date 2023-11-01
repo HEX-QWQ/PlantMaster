@@ -15,6 +15,29 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
 
+            <com.example.plant.Listview.PlantListView
+                android:id="@+id/myplantlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:dividerHeight="8dp"/>
+        </ScrollView>
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/titleback"
+            android:text="添加植株"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
     </LinearLayout>
 </RelativeLayout>

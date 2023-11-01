@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         mFragments = new ArrayList<>();
         //将四个Fragment加入集合中
         mFragments.add(new HomeFragment());
-        mFragments.add(new TalkFragment());
         mFragments.add(new MyplantFragment());
+        mFragments.add(new TalkFragment());
         mFragments.add(new MineFragment());
 
     }

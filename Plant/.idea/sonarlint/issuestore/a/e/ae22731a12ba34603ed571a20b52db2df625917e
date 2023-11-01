@@ -1,0 +1,29 @@
+
+E
+java:S1604*"(Make this anonymous inner class a lambda(êİÈ8íà¾Ä¸1
+p
+java:S1104"SMake tv_back a static final constant or non-public and provide accessors if needed.(Åã»¡8íà¾Ä¸1
+q
+java:S1104"TMake tv_title a static final constant or non-public and provide accessors if needed.(Åã»¡8íà¾Ä¸1
+v
+java:S1104"TMake titlebar a static final constant or non-public and provide accessors if needed.(ä©òšÿÿÿÿÿ8íà¾Ä¸1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(•Ò£†8îà¾Ä¸1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(û¸÷³ÿÿÿÿÿ8îà¾Ä¸1
+n	java:S116"RRename this field "tv_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åã»¡8õà¾Ä¸1
+o	java:S116"SRename this field "tv_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åã»¡8õà¾Ä¸1
+r	java:S116"VRename this field "plant_photo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ¯û¦8õà¾Ä¸1
+q	java:S116"URename this field "plant_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘°–8öà¾Ä¸1
+q	java:S116"URename this field "plant_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘°–8öà¾Ä¸1
+v	java:S116"ZRename this field "plant_introduct" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘°–8öà¾Ä¸1
+p	java:S116"TRename this field "plant_env" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘°–8öà¾Ä¸1
+p	java:S116"TRename this field "plant_eng" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘°–8öà¾Ä¸1
+C
+java:S1659"&Declare "tv_title" on a separate line.(Åã»¡8„á¾Ä¸1
+d
+java:S1659"GDeclare "plant_type" and all following declarations on a separate line.(‘°–8„á¾Ä¸1
+^
+java:S1874"<Remove this use of "getSerializableExtra"; it is deprecated.(Ğ¢Ë’şÿÿÿÿ8Šá¾Ä¸1
+@
+java:S1128"Remove this duplicated import.(ÉÛ Âùÿÿÿÿ8ÚÚ’Ç¸1
+@
+java:S1128"Remove this duplicated import.(Ÿ€††ÿÿÿÿÿ8ÛÚ’Ç¸1

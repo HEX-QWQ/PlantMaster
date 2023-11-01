@@ -1,0 +1,12 @@
+
+J
+java:S1604,"(Make this anonymous inner class a lambda(ë‡½Ÿûÿÿÿÿ8ú¸„Ì¸1
+J
+java:S1604L"(Make this anonymous inner class a lambda(˜ã¯şÿÿÿÿ8ú¸„Ì¸1
+J
+java:S1604W"(Make this anonymous inner class a lambda(˜ã¯şÿÿÿÿ8ú¸„Ì¸1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(û¸÷³ÿÿÿÿÿ8û¸„Ì¸1
+d
+java:S1659"GDeclare "etUsername" and all following declarations on a separate line.(×Ëã·8½¹„Ì¸1
+w
+java:S1450"ZRemove the "btnRegister" field and declare it as a local variable in the relevant methods.(ıüÀ½8¾¹„Ì¸1

@@ -89,8 +89,12 @@ public class SignUpActivity extends AppCompatActivity {
                     public void run() {
                         if (responseData.equals("success")) {
                             Toast.makeText(SignUpActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+                            startActivity(intent);
+                            finish();
                         } else {
                             Toast.makeText(SignUpActivity.this, "注册失败", Toast.LENGTH_SHORT).show();
+
                         }
                     }
                 });

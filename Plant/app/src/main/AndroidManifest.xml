@@ -54,6 +54,7 @@
         <activity
             android:name=".Activity.LoginActivity"
             android:exported="true"></activity>
+
         <activity
             android:name=".Fragment.HomeFragment"
             android:exported="true"
