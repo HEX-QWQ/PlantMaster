@@ -175,9 +175,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 show();
             }
         });
-        tv_title.setText("植物视界");
-        titlebar = (RelativeLayout) view.findViewById(R.id.title_bar);
-        tv_back.setVisibility(View.GONE);
+//        tv_title.setText("植物视界");
+//        titlebar = (RelativeLayout) view.findViewById(R.id.title_bar);
+//        tv_back.setVisibility(View.GONE);
         plantlist = (HomeListView) view.findViewById(R.id.plantlist);
         adapter = new HomeAdapter(getActivity());
         plantlist.setAdapter(adapter);

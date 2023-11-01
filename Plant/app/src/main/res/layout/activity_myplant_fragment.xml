@@ -1,43 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".Fragment.MyplantFragment">
-    <include layout="@layout/titile_bar"/>
-    <!-- 原有的布局内容，包括标题栏 -->
+    android:background="@drawable/bg_gradient"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Fragment.TalkFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="养护提醒"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#2E8B57"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="养护您的每一株植物"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#2E8B57"/>
     <LinearLayout
-        android:layout_marginTop="34dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
         android:orientation="vertical">
+        <!-- 导航标签，包含一个单选按钮组-->
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+        <HorizontalScrollView
+            android:id="@+id/hvChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
             android:scrollbars="none">
-
-            <com.example.plant.Listview.PlantListView
-                android:id="@+id/myplantlist"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:dividerHeight="8dp"/>
-        </ScrollView>
-        <Button
-            android:id="@+id/add_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@color/titleback"
-            android:text="添加植株"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/rgChannel"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_bg"
+                    android:orientation="horizontal">
+                </RadioGroup>
+            </LinearLayout>
+
+        </HorizontalScrollView>
     </LinearLayout>
-</RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpNewsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
