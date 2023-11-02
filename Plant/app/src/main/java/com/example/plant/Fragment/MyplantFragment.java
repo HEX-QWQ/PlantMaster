@@ -67,7 +67,8 @@ public class MyplantFragment extends Fragment implements ViewPager.OnPageChangeL
                         @Override
                         public void onCheckedChanged(RadioGroup group,int checkedId) {
                             viewPager.setCurrentItem(checkedId);
-                        }});
+                        }
+                    });
 
         }
 
@@ -107,7 +108,6 @@ public class MyplantFragment extends Fragment implements ViewPager.OnPageChangeL
         adapter=new myFragmentStatePagerAdapter(fragmentManager, titleList);
         viewPager.setAdapter(adapter);
         viewPager.setOffscreenPageLimit(2);
-        //viewPager.setCurrentItem(0);
         viewPager.addOnPageChangeListener(this);
     }
     //设置选定某个碎片时水平滚动视图的显示HorizontalScrollView

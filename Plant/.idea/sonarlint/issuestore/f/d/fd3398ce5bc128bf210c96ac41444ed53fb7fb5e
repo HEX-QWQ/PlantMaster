@@ -1,0 +1,10 @@
+
+E
+java:S16043"(Make this anonymous inner class a lambda(Ö¹™º8ÀÙ“í¸1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ó¶³òüÿÿÿÿ8ÄÙ“í¸1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§‰ì¡şÿÿÿÿ8ÄÙ“í¸1
+p	java:S116"TRename this field "ListImage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï„à8ìÙ“í¸1
+u	java:S116"TRename this field "ListTitle" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Ÿèøÿÿÿÿ8ìÙ“í¸1
+T
+java:S11351"2Complete the task associated to this TODO comment.(÷­²úÿÿÿÿ8ôÙ“í¸1
+]	java:S125F"<This block of commented-out lines of code should be removed.(Âë²Ûüÿÿÿÿ8øÙ“í¸1

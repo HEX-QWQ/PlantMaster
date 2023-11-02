@@ -1,104 +1,56 @@
 
-<<<<<<< HEAD
-E
-java:S1604D"(Make this anonymous inner class a lambda(Š«­Í8ÒİÒÆ¸1
-E
-java:S1604`"(Make this anonymous inner class a lambda(¶Àìï8ÒİÒÆ¸1
+F
+java:S1604•"(Make this anonymous inner class a lambda(Š«­Í8ñşÑÖ¸1
+F
+java:S1604ª"(Make this anonymous inner class a lambda(£ØäÛ8òşÑÖ¸1
+F
+java:S1604»"(Make this anonymous inner class a lambda(¶Àìï8òşÑÖ¸1
 n
-java:S1301°"KReplace this "switch" statement by "if" statements to increase readability.(ıŞ³‹ùÿÿÿÿ8ÓİÒÆ¸1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯¤‡½8‚íÚü·1
-n	java:S1163"RRename this field "tv_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íùæ¯8‡ŞÒÆ¸1
-o	java:S1163"SRename this field "tv_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íùæ¯8‰ŞÒÆ¸1
-w	java:S1167"VRename this field "search_text" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú×ÙÜüÿÿÿÿ8‰ŞÒÆ¸1
-q	java:S1168"URename this field "search_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ö¿£8‰ŞÒÆ¸1
+java:S1301¶"KReplace this "switch" statement by "if" statements to increase readability.(ıŞ³‹ùÿÿÿÿ8óşÑÖ¸1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯¤‡½8øşÑÖ¸1
+n	java:S116I"RRename this field "tv_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íùæ¯8´€ÒÖ¸1
+o	java:S116I"SRename this field "tv_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íùæ¯8·€ÒÖ¸1
+w	java:S116M"VRename this field "search_text" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú×ÙÜüÿÿÿÿ8º€ÒÖ¸1
+q	java:S116N"URename this field "search_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ö¿£8¼€ÒÖ¸1
+y	java:S116R"XRename this field "ClickToCamera" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èà¹°üÿÿÿÿ8¿€ÒÖ¸1
 C
-java:S16593"&Declare "tv_title" on a separate line.(íùæ¯8ŸŞÒÆ¸1
-z
-java:S14504"XRemove the "plantlist" field and declare it as a local variable in the relevant methods.(Èçùÿÿÿÿ8 ŞÒÆ¸1
-v
-java:S14508"YRemove the "search_btn" field and declare it as a local variable in the relevant methods.(¥Ö¿£8 ŞÒÆ¸1
-y
-java:S1450:"WRemove the "titlebar" field and declare it as a local variable in the relevant methods.(±òŸñûÿÿÿÿ8 ŞÒÆ¸1
-s
-java:S14503"VRemove the "tv_back" field and declare it as a local variable in the relevant methods.(íùæ¯8 ŞÒÆ¸1
-t
-java:S14503"WRemove the "tv_title" field and declare it as a local variable in the relevant methods.(íùæ¯8¡ŞÒÆ¸1
-L
-java:S1874A"/Remove this use of "Handler"; it is deprecated.(õÊëì8ªŞÒÆ¸1
-`
-java:S1854 "=Remove this useless assignment to local variable "jsonArray".(§ÇôÏùÿÿÿÿ8ÀŞÒÆ¸1
-Q
-java:S1481".Remove this unused "jsonArray" local variable.(Ø®·øÿÿÿÿ8ÂŞÒÆ¸1
-X
-java:S1161®":Add the "@Override" annotation above this method signature(‰ˆ­’8ÇŞÒÆ¸1
-D	java:S131°""Add a default case to this switch.(ıŞ³‹ùÿÿÿÿ8ÉŞÒÆ¸1
-;
-java:S1128"Remove this duplicated import.(›İš8ŒßÔÆ¸1
-@
-java:S1128"Remove this duplicated import.(×½¤ôüÿÿÿÿ8Ğ„ÔÆ¸1
-@
-java:S1128"Remove this duplicated import.(ÉÛ Âùÿÿÿÿ8…¼ÕÆ¸1
-@
-java:S1128"Remove this duplicated import.(Ÿ€††ÿÿÿÿÿ8³âÕÆ¸1
-@
-java:S1128"Remove this duplicated import.(Œşâïøÿÿÿÿ8¼†ÖÆ¸1
-N
-java:S1068:",Remove this unused "titlebar" private field.(±òŸñûÿÿÿÿ8ÌŞÒÆ¸1
-=======
-F
-java:S1604•"(Make this anonymous inner class a lambda(Š«­Í8Š¤ªÏ¸1
-F
-java:S1604ª"(Make this anonymous inner class a lambda(£ØäÛ8Š¤ªÏ¸1
-F
-java:S1604»"(Make this anonymous inner class a lambda(¶Àìï8õğÊÏ¸1
-n
-java:S1301¶"KReplace this "switch" statement by "if" statements to increase readability.(ıŞ³‹ùÿÿÿÿ8Š¤ªÏ¸1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯¤‡½8Œ¤ªÏ¸1
-n	java:S116I"RRename this field "tv_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íùæ¯8µ¤ªÏ¸1
-o	java:S116I"SRename this field "tv_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íùæ¯8µ¤ªÏ¸1
-w	java:S116M"VRename this field "search_text" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú×ÙÜüÿÿÿÿ8µ¤ªÏ¸1
-q	java:S116N"URename this field "search_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ö¿£8µ¤ªÏ¸1
-y	java:S116R"XRename this field "ClickToCamera" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èà¹°üÿÿÿÿ8ÖºÏ¸1
-C
-java:S1659I"&Declare "tv_title" on a separate line.(íùæ¯8¸¤ªÏ¸1
+java:S1659I"&Declare "tv_title" on a separate line.(íùæ¯8Ê€ÒÖ¸1
 w
-java:S1450T"ZRemove the "choosePhoto" field and declare it as a local variable in the relevant methods.(³ç°8’ÖºÏ¸1
+java:S1450T"ZRemove the "choosePhoto" field and declare it as a local variable in the relevant methods.(³ç°8Ï€ÒÖ¸1
 s
-java:S1450S"VRemove the "inflate" field and declare it as a local variable in the relevant methods.(äÆëÎ8’ÖºÏ¸1
+java:S1450S"VRemove the "inflate" field and declare it as a local variable in the relevant methods.(äÆëÎ8Ò€ÒÖ¸1
 z
-java:S1450J"XRemove the "plantlist" field and declare it as a local variable in the relevant methods.(Èçùÿÿÿÿ8¸¤ªÏ¸1
+java:S1450J"XRemove the "plantlist" field and declare it as a local variable in the relevant methods.(Èçùÿÿÿÿ8Õ€ÒÖ¸1
 v
-java:S1450N"YRemove the "search_btn" field and declare it as a local variable in the relevant methods.(¥Ö¿£8¹¤ªÏ¸1
+java:S1450N"YRemove the "search_btn" field and declare it as a local variable in the relevant methods.(¥Ö¿£8Ù€ÒÖ¸1
 z
-java:S1450U"XRemove the "takePhoto" field and declare it as a local variable in the relevant methods.(ä‡ü¡ûÿÿÿÿ8“ÖºÏ¸1
-y
-java:S1450P"WRemove the "titlebar" field and declare it as a local variable in the relevant methods.(±òŸñûÿÿÿÿ8¹¤ªÏ¸1
+java:S1450U"XRemove the "takePhoto" field and declare it as a local variable in the relevant methods.(ä‡ü¡ûÿÿÿÿ8Ü€ÒÖ¸1
 s
-java:S1450I"VRemove the "tv_back" field and declare it as a local variable in the relevant methods.(íùæ¯8¹¤ªÏ¸1
+java:S1450I"VRemove the "tv_back" field and declare it as a local variable in the relevant methods.(íùæ¯8â€ÒÖ¸1
 t
-java:S1450I"WRemove the "tv_title" field and declare it as a local variable in the relevant methods.(íùæ¯8¹¤ªÏ¸1
+java:S1450I"WRemove the "tv_title" field and declare it as a local variable in the relevant methods.(íùæ¯8å€ÒÖ¸1
 y
-java:S3252Z"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(Ï…Ô³üÿÿÿÿ8À¤ªÏ¸1
+java:S3252Z"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(Ï…Ô³üÿÿÿÿ8—ÒÖ¸1
 L
-java:S1874q"/Remove this use of "Handler"; it is deprecated.(õÊëì8Ã¤ªÏ¸1
+java:S1874q"/Remove this use of "Handler"; it is deprecated.(õÊëì8¨ÒÖ¸1
+^	java:S125²"<This block of commented-out lines of code should be removed.(ãø¼şÿÿÿÿ8õíøÖ¸1
 `
-java:S1854û"=Remove this useless assignment to local variable "jsonArray".(§ÇôÏùÿÿÿÿ8Ü¤ªÏ¸1
+java:S1854û"=Remove this useless assignment to local variable "jsonArray".(§ÇôÏùÿÿÿÿ8ğÒÖ¸1
 Q
-java:S1481ù".Remove this unused "jsonArray" local variable.(Ø®·øÿÿÿÿ8İ¤ªÏ¸1
-?	java:S131 ""Add a default case to this switch.(ºÖ8à¤ªÏ¸1
+java:S1481ù".Remove this unused "jsonArray" local variable.(Ø®·øÿÿÿÿ8òÒÖ¸1
+?	java:S131 ""Add a default case to this switch.(ºÖ8úÒÖ¸1
 X
-java:S1161´":Add the "@Override" annotation above this method signature(‰ˆ­’8ß¤ªÏ¸1
-D	java:S131¶""Add a default case to this switch.(ıŞ³‹ùÿÿÿÿ8îƒ¬Ï¸1
+java:S1161´":Add the "@Override" annotation above this method signature(‰ˆ­’8€‚ÒÖ¸1
+D	java:S131¶""Add a default case to this switch.(ıŞ³‹ùÿÿÿÿ8‚ÒÖ¸1
 ;
-java:S1128%"Remove this duplicated import.(›İš8à¤ªÏ¸1
+java:S1128%"Remove this duplicated import.(›İš8„‚ÒÖ¸1
 @
-java:S1128*"Remove this duplicated import.(×½¤ôüÿÿÿÿ8à¤ªÏ¸1
+java:S1128*"Remove this duplicated import.(×½¤ôüÿÿÿÿ8„‚ÒÖ¸1
 @
-java:S1128+"Remove this duplicated import.(ÉÛ Âùÿÿÿÿ8à¤ªÏ¸1
+java:S1128+"Remove this duplicated import.(ÉÛ Âùÿÿÿÿ8„‚ÒÖ¸1
 @
-java:S1128,"Remove this duplicated import.(Ÿ€††ÿÿÿÿÿ8à¤ªÏ¸1
+java:S1128,"Remove this duplicated import.(Ÿ€††ÿÿÿÿÿ8„‚ÒÖ¸1
 @
-java:S1128-"Remove this duplicated import.(Œşâïøÿÿÿÿ8á¤ªÏ¸1
+java:S1128-"Remove this duplicated import.(Œşâïøÿÿÿÿ8…‚ÒÖ¸1
 N
-java:S1068P",Remove this unused "titlebar" private field.(±òŸñûÿÿÿÿ8á¤ªÏ¸1
->>>>>>> d811b7e566751b307292bdb4c86386d7c4c1ad91
+java:S1068P",Remove this unused "titlebar" private field.(±òŸñûÿÿÿÿ8‰‚ÒÖ¸1

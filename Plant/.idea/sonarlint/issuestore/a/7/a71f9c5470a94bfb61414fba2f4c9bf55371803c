@@ -1,0 +1,25 @@
+
+n
+java:S1104&"QMake title a static final constant or non-public and provide accessors if needed.(Å¬õ8Û¡‚î¸1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÇıàÉ8Ü¡‚î¸1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯¤‡½8Ü¡‚î¸1
+s
+java:S1450#"VRemove the "mParam1" field and declare it as a local variable in the relevant methods.(•Íï‘8ò¡‚î¸1
+s
+java:S1450$"VRemove the "mParam2" field and declare it as a local variable in the relevant methods.(¡ˆ€ 8ò¡‚î¸1
+T
+java:S1135"2Complete the task associated to this TODO comment.(ÜûŠ—øÿÿÿÿ8ù¡‚î¸1
+T
+java:S1135""2Complete the task associated to this TODO comment.(ğï¢öúÿÿÿÿ8ù¡‚î¸1
+T
+java:S1135;"2Complete the task associated to this TODO comment.(ßíŠÿÿÿÿÿ8û¡‚î¸1
+X	java:S125C"<This block of commented-out lines of code should be removed.(œ™Á•8ş¡‚î¸1
+[
+java:S1172Y"9Remove this unused method parameter "savedInstanceState".(´ŒĞÚùÿÿÿÿ8¢‚î¸1
+]	java:S125k"<This block of commented-out lines of code should be removed.(¢ü„ùÿÿÿÿ8šìãõ¸1
+]	java:S125w"<This block of commented-out lines of code should be removed.(‹¬œ£ûÿÿÿÿ8šìãõ¸1
+X	java:S125z"<This block of commented-out lines of code should be removed.(Ç‚Âë8†¢‚î¸1
+H
+java:S1068#"+Remove this unused "mParam1" private field.(•Íï‘8†¢‚î¸1
+H
+java:S1068$"+Remove this unused "mParam2" private field.(¡ˆ€ 8†¢‚î¸1

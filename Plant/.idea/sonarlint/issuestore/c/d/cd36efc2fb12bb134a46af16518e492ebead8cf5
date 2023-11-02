@@ -1,9 +1,25 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯¤‡½8¨û–ı·1
-n	java:S116"RRename this field "tv_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±±›Í8Ï—ı·1
-t
-java:S1450"WRemove the "titlebar" field and declare it as a local variable in the relevant methods.(¥Ğ²Í8Ş—ı·1
-s
-java:S1450"VRemove the "tv_back" field and declare it as a local variable in the relevant methods.(±±›Í8Ş—ı·1
-I
-java:S1068",Remove this unused "titlebar" private field.(¥Ğ²Í8æ—ı·1
+v
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÓÉôö8³´—Û¸1
+E
+java:S1604B"(Make this anonymous inner class a lambda(úîº½8³´—Û¸1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯¤‡½8µ´—Û¸1
+n	java:S116*"RRename this field "tv_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±±›Í8×´—Û¸1
+
+java:S1186a"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(±Ë‡*8Ù´—Û¸1
+£
+java:S1186i"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿ŞÄªùÿÿÿÿ8Ú´—Û¸1
+x
+java:S14503"VRemove the "adapter" field and declare it as a local variable in the relevant methods.(ìüıâıÿÿÿÿ8Û´—Û¸1
+m
+java:S3252W"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ùï»Î8â´—Û¸1
+l
+java:S3252X"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(²ïòj8â´—Û¸1
+U
+java:S1874x"9Remove this use of "getDefaultDisplay"; it is deprecated.(Ù¡õ18æ´—Û¸1
+N
+java:S1874x"2Remove this use of "getMetrics"; it is deprecated.(Ù¡õ18æ´—Û¸1
+H
+java:S1068*"+Remove this unused "tv_back" private field.(±±›Í8ç´—Û¸1
+N
+java:S1068+",Remove this unused "titlebar" private field.(±òŸñûÿÿÿÿ8ç´—Û¸1

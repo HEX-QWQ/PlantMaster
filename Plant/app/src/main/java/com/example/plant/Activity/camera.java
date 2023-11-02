@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.util.Base64;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -27,11 +28,29 @@ import android.widget.Toast;
 
 import com.example.plant.R;
 
+import org.jetbrains.annotations.NotNull;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.FormBody;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 public class camera extends AppCompatActivity {
 
@@ -74,7 +93,45 @@ public class camera extends AppCompatActivity {
             openAlbum();
         }
     }
+    void getType(String base64) {
+//        Log.e("TAG","调用");
+        Log.e("TAG", base64);
+        String url = "http://10.68.134.109:5000/identify";
+        String json = "{\"image_base64\": \"" + base64 + "\"}";
+//        OkHttpClient client = new OkHttpClient();
 
+        OkHttpClient client = new OkHttpClient.Builder()
+                .callTimeout(200, TimeUnit.SECONDS)
+                .build();
+        MediaType mediaType = MediaType.parse("application/json");
+        Log.e("JSON",json);
+        RequestBody requestBody = RequestBody.create(mediaType, json);
+        Request request = new Request.Builder()
+                .url(url)
+                .post(requestBody)
+                .build();
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(@NotNull Call call, @NotNull IOException e) {
+                Log.e("TAG", "onFailure: " + e);
+            }
+
+            @Override
+            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+                String jsonData = response.body().string();
+                try {
+                    JSONObject jsonObject = new JSONObject(jsonData);
+                    JSONArray resultArray = jsonObject.getJSONArray("result");
+                    JSONObject resultObject = resultArray.getJSONObject(0);
+                    String encodedName = resultObject.getString("name");
+                    String name = URLDecoder.decode(encodedName, "UTF-8");
+                    Log.e("TAG",name);
+                } catch (JSONException | UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
     /**
      * 打开相册
      */
@@ -139,6 +196,29 @@ public class camera extends AppCompatActivity {
     }
 
     /*相机或者相册返回来的数据*/
+    private Bitmap compressBitmap(Bitmap bitmap, int maxSize) {
+        int width = bitmap.getWidth();
+        int height = bitmap.getHeight();
+        float bitmapRatio = (float) width / (float) height;
+
+        if (bitmapRatio > 1) {
+            width = maxSize;
+            height = (int) (width / bitmapRatio);
+        } else {
+            height = maxSize;
+            width = (int) (height * bitmapRatio);
+        }
+
+        return Bitmap.createScaledBitmap(bitmap, width, height, true);
+    }
+
+    private String bitmapToBase64(Bitmap bitmap) {
+        bitmap = compressBitmap(bitmap,600);//将图片进行压缩
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+        byte[] imageBytes = baos.toByteArray();
+        return Base64.encodeToString(imageBytes, Base64.NO_WRAP);
+    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -146,11 +226,12 @@ public class camera extends AppCompatActivity {
             case TAKE_PHOTO:
                 if (resultCode == RESULT_OK) {
                     try {
-                        /*如果拍照成功，将Uri用BitmapFactory的decodeStream方法转为Bitmap*/
+                        // 从Uri获取Bitmap
                         Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(mImageUri));
-                        Log.i(TAG, "onActivityResult: imageUri " + mImageUri);
-                        galleryAddPic(mImageUriFromFile);
-                        mPicture.setImageBitmap(bitmap);//显示到ImageView上
+                        String base64Image = bitmapToBase64(bitmap);
+                        Log.e("BASE",base64Image);
+                        getType(base64Image);
+                        // 在这里可以使用base64Image进行其他操作，比如上传服务器等
                     } catch (FileNotFoundException e) {
                         e.printStackTrace();
                     }

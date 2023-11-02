@@ -15,6 +15,8 @@ java:S1450"VRemove the "mParam2" field and declare it as a local variable in t
 T
 java:S1135"2Complete the task associated to this TODO comment.(ÜûŠ—øÿÿÿÿ8Ï¹ÉÉ¸1
 ]	java:S125>"<This block of commented-out lines of code should be removed.(•»›äüÿÿÿÿ8Ú¹ÉÉ¸1
+;
+java:S1128"Remove this duplicated import.(«¾¦8ˆªÝî¸1
 H
 java:S1068"+Remove this unused "mParam1" private field.(•Íï‘8ä¹ÉÉ¸1
 H

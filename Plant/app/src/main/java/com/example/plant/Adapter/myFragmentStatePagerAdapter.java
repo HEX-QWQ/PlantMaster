@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.example.plant.Fragment.PlaceholderFragment;
+import com.example.plant.Fragment.contentFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,8 @@ public class myFragmentStatePagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int idx) {
 
         String newsCategoryTitle = titleList[idx];
-        return PlaceholderFragment.newInstance(newsCategoryTitle);
+        //"今日养护","即将养护"
+        return contentFragment.newInstance(newsCategoryTitle);
     }
     //滑动翻页时根据idx 返回需要装入ViewPager的碎片。
 

@@ -1,32 +1,38 @@
 
 L
-java:S1066:"/Merge this if statement with the enclosing one.(â¥¤›8¢ Ï¸1
-g	java:S101$"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ã‡üÑùÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(û¸÷³ÿÿÿÿÿ
-j	java:S116&"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İù½‘8“£ Ï¸1
+java:S1066M"/Merge this if statement with the enclosing one.(â¥¤›8ª¿§ù¸1
+n	java:S1017"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ã‡üÑùÿÿÿÿ8«¿§ù¸1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(û¸÷³ÿÿÿÿÿ8­¿§ù¸1
+j	java:S1169"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İù½‘8÷¿§ù¸1
 P
-java:S1659'".Declare "mChooseFromAlbum" on a separate line.(Ö“æñüÿÿÿÿ8¡£ Ï¸1
+java:S1659:".Declare "mChooseFromAlbum" on a separate line.(Ö“æñüÿÿÿÿ8ü¿§ù¸1
 L
-java:S16590"/Declare "mImageUriFromFile" on a separate line.( ô´8££ Ï¸1
+java:S1659C"/Declare "mImageUriFromFile" on a separate line.( ô´8ü¿§ù¸1
 u
-java:S14501"XRemove the "imageFile" field and declare it as a local variable in the relevant methods.(şŠÆ·8¦£ Ï¸1
+java:S1450D"XRemove the "imageFile" field and declare it as a local variable in the relevant methods.(şŠÆ·8ı¿§ù¸1
+}
+java:S1450C"`Remove the "mImageUriFromFile" field and declare it as a local variable in the relevant methods.( ô´8ı¿§ù¸1
+X	java:S125a"<This block of commented-out lines of code should be removed.(çÌŸÀ8…À§ù¸1
+]	java:S125e"<This block of commented-out lines of code should be removed.(§¡¾“ûÿÿÿÿ8…À§ù¸1
+\
+java:S1874">Remove this use of "startActivityForResult"; it is deprecated.(ãØ—é8À§ù¸1
+a
+java:S1874£">Remove this use of "startActivityForResult"; it is deprecated.(²Û¬…ûÿÿÿÿ8‘À§ù¸1
 [
-java:S1874T">Remove this use of "startActivityForResult"; it is deprecated.(ãØ—é8¹£ Ï¸1
-`
-java:S1874j">Remove this use of "startActivityForResult"; it is deprecated.(²Û¬…ûÿÿÿÿ8À£ Ï¸1
-Z
-java:S1117x"=Rename "imageFile" which hides the field declared at line 49.(Úñé¦8Ä£ Ï¸1
+java:S1117±"=Rename "imageFile" which hides the field declared at line 68.(Úñé¦8“À§ù¸1
 m
-java:S1874ƒ"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ8Å£ Ï¸1
+java:S1874¼"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ8“À§ù¸1
 h
-java:S1874"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ8Ç£ Ï¸1
+java:S1874ß"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ8—À§ù¸1
 c
-java:S3252Ê"@Use static access with "android.provider.BaseColumns" for "_ID".(»¨–öıÿÿÿÿ8Ñ£ Ï¸1
+java:S3252›"@Use static access with "android.provider.BaseColumns" for "_ID".(»¨–öıÿÿÿÿ8šÀ§ù¸1
 k
-java:S3252ò"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(äµõŒ8Ø£ Ï¸1
+java:S3252Ã"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(äµõŒ8œÀ§ù¸1
 i
-java:S1874ÿ"FRemove this use of "ACTION_MEDIA_SCANNER_SCAN_FILE"; it is deprecated.(ëÒ¿šıÿÿÿÿ8Û£ Ï¸1
+java:S1874Ğ"FRemove this use of "ACTION_MEDIA_SCANNER_SCAN_FILE"; it is deprecated.(ëÒ¿šıÿÿÿÿ8À§ù¸1
 P
-java:S1068'".Remove this unused "mTakePhoto" private field.(Ö“æñüÿÿÿÿ8Ş£ Ï¸1
+java:S1068:".Remove this unused "mTakePhoto" private field.(Ö“æñüÿÿÿÿ8À§ù¸1
 V
-java:S1068'"4Remove this unused "mChooseFromAlbum" private field.(Ö“æñüÿÿÿÿ8à£ Ï¸1
+java:S1068:"4Remove this unused "mChooseFromAlbum" private field.(Ö“æñüÿÿÿÿ8À§ù¸1
+U
+java:S1144Ï"2Remove this unused private "galleryAddPic" method.(¦‰ïŒûÿÿÿÿ8À§ù¸1
