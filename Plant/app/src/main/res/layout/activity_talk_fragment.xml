@@ -1,66 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".Fragment.TalkFragment">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="养护提醒"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:textColor="#2E8B57"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="养护您的每一株植物"
-        android:textStyle="bold"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:textColor="#2E8B57"/>
+    android:background="@color/white">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
-        <!-- 导航标签，包含一个单选按钮组-->
+        <include layout="@layout/titile_bar"/>
 
-        <HorizontalScrollView
-            android:id="@+id/hvChannel"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:scrollbars="none">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
+
+            <!-- 头像 -->
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/image_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/tou" />
+
+            <!-- 右边文字 -->
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-                <RadioGroup
-                    android:id="@+id/rgChannel"
-                    android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/image_avatar"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/name_text"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_bg"
-                    android:orientation="horizontal">
-                </RadioGroup>
+                    android:layout_height="20dp"
+                    android:text="小刘"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="3dp"
+                    android:text="  我的花好像生病了！"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
 
-        </HorizontalScrollView>
-    </LinearLayout>
+        </RelativeLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vpNewsList"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        <!-- 内容 -->
+        <ImageView
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="100dp"
+            android:id="@+id/photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/hua"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"/>
+
+        <!-- 分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <Button
+            android:id="@+id/imageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="275dp"
+            android:contentDescription="添加"
+            android:background="@drawable/ww"
+            android:scaleType="fitCenter"/>
+
+
+    </LinearLayout>
 
 
 </LinearLayout>
