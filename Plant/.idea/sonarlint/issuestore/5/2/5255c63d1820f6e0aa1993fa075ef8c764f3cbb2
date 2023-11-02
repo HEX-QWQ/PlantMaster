@@ -25,14 +25,14 @@ java:S1874¼"JDon't override a deprecated method or explicitly mark it as "@Dep
 h
 java:S1874ß"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ8—À§ù¸1
 c
-java:S3252›"@Use static access with "android.provider.BaseColumns" for "_ID".(»¨–öıÿÿÿÿ8šÀ§ù¸1
+java:S3252œ"@Use static access with "android.provider.BaseColumns" for "_ID".(»¨–öıÿÿÿÿ8šÀ§ù¸1
 k
-java:S3252Ã"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(äµõŒ8œÀ§ù¸1
+java:S3252Ä"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(äµõŒ8œÀ§ù¸1
 i
-java:S1874Ğ"FRemove this use of "ACTION_MEDIA_SCANNER_SCAN_FILE"; it is deprecated.(ëÒ¿šıÿÿÿÿ8À§ù¸1
+java:S1874Ñ"FRemove this use of "ACTION_MEDIA_SCANNER_SCAN_FILE"; it is deprecated.(ëÒ¿šıÿÿÿÿ8À§ù¸1
 P
 java:S1068:".Remove this unused "mTakePhoto" private field.(Ö“æñüÿÿÿÿ8À§ù¸1
 V
 java:S1068:"4Remove this unused "mChooseFromAlbum" private field.(Ö“æñüÿÿÿÿ8À§ù¸1
 U
-java:S1144Ï"2Remove this unused private "galleryAddPic" method.(¦‰ïŒûÿÿÿÿ8À§ù¸1
+java:S1144Ğ"2Remove this unused private "galleryAddPic" method.(¦‰ïŒûÿÿÿÿ8À§ù¸1

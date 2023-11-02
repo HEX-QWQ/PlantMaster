@@ -117,11 +117,11 @@ public class contentFragment extends Fragment {
 //        byte[] imageBytes = byteArrayOutputStream.toByteArray();
 
 //        String base64EncodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
-        now.setpname("晓栀");
-
-        //now.setimgBase64(base64EncodedImage);
+        if(title.equals("今日养护")) now.setpname("晓栀-客厅");
+        else now.setpname("栀子花-阳台");
         tmp.add(now);
-        now2.setpname("芍药");
+        if(title.equals("今日养护"))  now2.setpname("芍药-客厅");
+        else now2.setpname("黄金花月-阳台");
         tmp.add(now2);
         return tmp;
     }

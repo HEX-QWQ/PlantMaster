@@ -11,27 +11,16 @@
         <attr name="msrc" format="reference" />
     </declare-styleable>
 
-<!--    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">-->
-<!--        &lt;!&ndash; 背景透明 &ndash;&gt;-->
-<!--        <item name="android:windowBackground">@android:color/transparent</item>-->
-<!--        <item name="android:windowContentOverlay">@null</item>-->
-<!--        &lt;!&ndash; 浮于Activity之上 &ndash;&gt;-->
-<!--        <item name="android:windowIsFloating">true</item>-->
-<!--        &lt;!&ndash; 边框 &ndash;&gt;-->
-<!--        <item name="android:windowFrame">@null</item>-->
-<!--        &lt;!&ndash; Dialog以外的区域模糊效果 &ndash;&gt;-->
-<!--        <item name="android:backgroundDimEnabled">true</item>-->
-<!--        &lt;!&ndash; 无标题 &ndash;&gt;-->
-<!--        <item name="android:windowNoTitle">true</item>-->
-<!--        &lt;!&ndash; 半透明 &ndash;&gt;-->
-<!--        <item name="android:windowIsTranslucent">true</item>-->
-<!--        &lt;!&ndash; Dialog进入及退出动画 &ndash;&gt;-->
-<!--        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>-->
-<!--    </style>-->
-<!--    &lt;!&ndash; ActionSheet进出动画 &ndash;&gt;-->
-<!--    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">-->
-<!--        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>-->
-<!--        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>-->
-<!--    </style>-->
+    <style name="RoundStyle">
+        <item name="cornerSizeTopLeft">150dp</item>
+        <item name="cornerSizeTopRight">150dp</item>
+        <item name="cornerSizeBottomRight">150dp</item>
+        <item name="cornerSizeBottomLeft">150dp</item>
+    </style>
+    <style name="circleImageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
 </resources>
 

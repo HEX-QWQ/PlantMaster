@@ -1,7 +1,7 @@
 package com.example.plant.utils;
 
 public class Constant {
-    public static final String allURL="http://192.168.79.146:8080/Plant/";
+    public static final String allURL="http://10.68.145.116:8080/Plant/";
     public static final String ReadPlant_URL=allURL+"findplant";//读取植株信息
     public static final String SearchPlant_URL=allURL+"searchplant";
     public static final String LOGIN_URL = allURL+"login1";//登录检测接口

@@ -36,10 +36,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/myPlantName"
-                    android:layout_margin="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
                     android:textSize="24dp"
                     android:textStyle="bold"
                     android:text="name"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="养护进度23/56"
                     android:textColor="@color/black"/>
             </LinearLayout>
         </LinearLayout>

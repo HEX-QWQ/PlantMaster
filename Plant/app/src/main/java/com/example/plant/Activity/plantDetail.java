@@ -29,22 +29,22 @@ public class plantDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_detail);
         bean = (plantBean) getIntent().getSerializableExtra("plant"); //获取店铺详情数据 23
-        if (bean == null) return;
+        if (bean == null) {
+            return;
+        }
        init();
        setData();
     }
     private void init() {
         tv_back = (TextView) findViewById(R.id.tv_back);
-        tv_title = (TextView) findViewById(R.id.tv_title);
-        tv_title.setText("植株详情");
         titlebar = (RelativeLayout) findViewById(R.id.title_bar);
         //结束活动，返回碎片页
-        tv_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+//        tv_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                finish();
+//            }
+//        });
         plant_photo=(ImageView)findViewById(R.id.plant_photo);
         plant_name=(TextView)findViewById(R.id.plant_name);
         plant_type=(TextView)findViewById(R.id.plant_type);

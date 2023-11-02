@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.ViewPager;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -26,6 +28,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.plant.Adapter.myCameraFragmentStatePagerAdapter;
+import com.example.plant.Adapter.myFragmentStatePagerAdapter;
 import com.example.plant.R;
 
 import org.jetbrains.annotations.NotNull;
@@ -66,7 +70,14 @@ public class camera extends AppCompatActivity {
     private static final String FILE_PROVIDER_AUTHORITY = "com.example.plant.fileprovider";
     private Uri mImageUri, mImageUriFromFile;
     private File imageFile;
-
+    private ViewPager viewPager;
+    myCameraFragmentStatePagerAdapter adapter;
+    private void initViewPager(){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        adapter=new myCameraFragmentStatePagerAdapter(fragmentManager);
+        viewPager.setAdapter(adapter);
+        viewPager.setOffscreenPageLimit(2);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,8 +93,9 @@ public class camera extends AppCompatActivity {
                         REQUEST_PERMISSION_CODE);
             }
         }
-
-        mPicture = (ImageView) findViewById(R.id.iv_picture);
+        viewPager=(ViewPager)findViewById(R.id.imgPager);
+        initViewPager();
+//        mPicture = (ImageView) findViewById(R.id.iv_picture);
         Intent intent = getIntent();
         String value = intent.getStringExtra("args");
         if(value.equals("shot")){
@@ -191,7 +203,6 @@ public class camera extends AppCompatActivity {
             Log.i(TAG, "onRequestPermissionsResult: permission granted");
         } else {
             Log.i(TAG, "onRequestPermissionsResult: permission denied");
-            Toast.makeText(this, "You Denied Permission", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -230,6 +241,7 @@ public class camera extends AppCompatActivity {
                         Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(mImageUri));
                         String base64Image = bitmapToBase64(bitmap);
                         Log.e("BASE",base64Image);
+//                        mPicture.setImageBitmap(bitmap);
                         getType(base64Image);
                         // 在这里可以使用base64Image进行其他操作，比如上传服务器等
                     } catch (FileNotFoundException e) {
@@ -302,7 +314,7 @@ public class camera extends AppCompatActivity {
     private void displayImage(String imagePath) {
         if (imagePath != null) {
             Bitmap bitmap = BitmapFactory.decodeFile(imagePath);
-            mPicture.setImageBitmap(bitmap);
+//            mPicture.setImageBitmap(bitmap);
         } else {
             Toast.makeText(this, "failed to get image", Toast.LENGTH_SHORT).show();
         }

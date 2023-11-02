@@ -81,7 +81,9 @@ public class HomeAdapter extends BaseAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (bean == null) return;
+                if (bean == null) {
+                    return;
+                }
                 Intent intent = new Intent(mContext, plantDetail.class);
                 //把图书的详细信息传递到图书详情界面
                 intent.putExtra("plant", bean);

@@ -3,13 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white">
-
+    android:background="@drawable/bg_gradient">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交流天地"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#2E8B57"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <include layout="@layout/titile_bar"/>
 
         <RelativeLayout
             android:layout_marginTop="5dp"
@@ -24,7 +32,7 @@
                 android:id="@+id/image_avatar"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/tou" />
+                android:src="@drawable/mine5" />
 
             <!-- 右边文字 -->
             <LinearLayout
@@ -39,9 +47,10 @@
                 <TextView
                     android:id="@+id/name_text"
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
+                    android:layout_height="wrap_content"
                     android:text="小刘"
                     android:textSize="18sp"
+                    android:layout_marginBottom="10dp"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -66,7 +75,7 @@
             android:id="@+id/photo"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/hua"
+            android:src="@drawable/image2"
             android:scaleType="centerCrop"
             android:layout_marginTop="5dp"/>
 
@@ -86,7 +95,7 @@
             android:layout_marginTop="220dp"
             android:layout_marginLeft="275dp"
             android:contentDescription="添加"
-            android:background="@drawable/ww"
+            android:background="@drawable/mine5"
             android:scaleType="fitCenter"/>
 
 

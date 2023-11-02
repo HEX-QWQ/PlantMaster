@@ -54,7 +54,7 @@ public class MyplantFragment extends Fragment implements ViewPager.OnPageChangeL
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         if(view==null){
-            view=inflater.inflate(R.layout.activity_talk_fragment, container, false);
+            view=inflater.inflate(R.layout.activity_myplant_fragment, container, false);
 
             viewPager=(ViewPager)view.findViewById(R.id.vpNewsList);
             initViewPager();

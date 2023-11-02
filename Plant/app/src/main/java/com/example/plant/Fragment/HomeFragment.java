@@ -7,11 +7,15 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Base64;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -54,7 +58,9 @@ import com.qweather.sdk.view.QWeather;
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import okhttp3.Call;
@@ -62,7 +68,26 @@ import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+class ImageUtils {
+    public static String drawableToBase64(Context context, int drawableResId) {
+        // 获取Drawable对象
+        Drawable drawable = context.getDrawable(drawableResId);
 
+        // 将Drawable转换为Bitmap对象
+        Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+        drawable.draw(canvas);
+
+        // 将Bitmap对象转换为Base64编码字符串
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        byte[] byteArray = baos.toByteArray();
+        String base64Image = Base64.encodeToString(byteArray, Base64.DEFAULT);
+
+        return base64Image;
+    }
+}
 public class HomeFragment extends Fragment implements View.OnClickListener {
     private ImageView imageView;
     private int[] images = {R.drawable.image1, R.drawable.image2, R.drawable.image4,R.drawable.image5}; // 图片资源数组
@@ -178,8 +203,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 //        tv_title.setText("植物视界");
 //        titlebar = (RelativeLayout) view.findViewById(R.id.title_bar);
 //        tv_back.setVisibility(View.GONE);
+        List<plantBean> plantList = initData();
+
         plantlist = (HomeListView) view.findViewById(R.id.plantlist);
         adapter = new HomeAdapter(getActivity());
+        adapter.setData(plantList);
         plantlist.setAdapter(adapter);
         search_text=(EditText) view.findViewById(R.id.search_text);
         search_btn=(ImageButton) view.findViewById(R.id.search_btn);
@@ -191,6 +219,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 sendRequest2(searchtext);
             }
         });
+
     }
 
     @Override
@@ -313,11 +342,36 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                         String result = (String) msg.obj;
                         Log.e("CartActivity", result);
                         //解析获取的JSON数据
-                        List<plantBean> plantList = JsonParse.getInstance().getPlantList(result);
+//                        List<plantBean> plantList = JsonParse.getInstance().getPlantList(result);
+                        List<plantBean> plantList = initData();
                         adapter.setData(plantList);
                     }
                     break;
             }
         }
+    }
+    List<plantBean> initData(){
+        List<plantBean> plantList = new ArrayList<>();
+        plantBean p1,p2,p3;
+        p1 = new plantBean();
+        p2 = new plantBean();
+        p3 = new plantBean();
+        p1.setpname("栀子花");
+//        p1.setimgBase64(ImageUtils.drawableToBase64(getContext(),R.drawable.zhizi));
+        p1.settype("茜草科（Rubiaceae）栀子属（Gardenia）");
+        p1.setcontent("生长环境：栀子花喜欢温暖湿润的气候，适宜生长在阳光充足、排水良好的土壤中。确保提供足够的阳光，但也要避免暴晒和强风。\n" +
+                "\n" +
+                "植株管理：定期修剪栀子花，保持树形整洁，并有助于促进新的花芽生长。及时除去幼苗周围的杂草，以减少竞争。栀子花对水分需求较高，特别是在夏季炎热干燥的时候，要保持适度的浇水。\n" +
+                "\n" +
+                "施肥：在生长季节（春季至夏季）每个月施一次有机肥料，有助于提供养分供给。可以使用腐熟的堆肥或复合有机肥。\n" +
+                "\n");
+        p2.setpname("黄金花月");
+        p2.settype("蔷薇科（Rosaceae）月季属（Rosa）");
+
+        p3.setpname("多肉");
+        plantList.add(p1);
+        plantList.add(p2);
+        plantList.add(p3);
+        return plantList;
     }
 }
